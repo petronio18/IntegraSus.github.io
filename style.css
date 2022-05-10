@@ -2,19 +2,62 @@
 header{
     background: #2d7a8a;
     grid-area: header;
-    height: 70px;
-    padding: 5x;
+    height: 62px;
+}
+
+
+.sair_btn{
+    padding: 5px;
+    background: #51b3ec;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+   
 }
 img{
     height: 43px;
+    height: 50px;
 }
+
 
 /* Header fim */
 
 /*Nav  */
 nav{
-background-color: aqua;
+background-color: #72de92;
 grid-area: nav;
+}
+nav a{
+     margin-top: 5px; 
+    padding-top: 30px;
+    padding-left: 20px;
+    left: 0;
+    /* background: #72de92; */
+    transition: 0.5s;
+    transition-property: left;
+}
+
+ a{
+    color: #fff;
+    display: block;
+  
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property:background ;
+}
+
+nav ion-icon{
+    padding-right: 5px;
 }
 
 a{
@@ -25,7 +68,7 @@ a{
 
 /* Main inico*/
 main{
-    background-color: blueviolet;
+    /* background-color: ; */
     grid-area: main;
 }
 /* Main fim */
@@ -42,7 +85,7 @@ footer{
 .container{
     display: grid;
     grid-template-columns: 0.5fr 3fr; 
-    grid-template-rows: 10vh 80vh 20vh;
+    grid-template-rows: 10vh 70vh 20vh;
     grid-template-areas: "header header" 
                         " nav main"
                         "nav main";
