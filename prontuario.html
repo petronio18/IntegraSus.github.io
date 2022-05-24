@@ -7,6 +7,52 @@
     <title>Prontuario Medico</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+        <style>
+    
+.text_font {
+    font-family: 'Syne';
+}
+.button_form {
+     background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #204523;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Syne;
+	font-size:10px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+     position: relative; 
+     cursor: pointer;
+     
+}
+.button_form:hover {
+	background-color:#3a4d2f;
+}
+.button_form:active {
+	position:relative;
+	top:1px;
+}
+
+/* nao alterar essas 4 linhas do form  */
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.form_center{
+    padding: 10px; 
+}
+
+input{
+    width: 120px;
+}
+
+</style>
 </head>
 <body>
     <body>
@@ -17,9 +63,10 @@
                         <!-- <ion-icon name="menu-outline" id="sidebar_btn"></ion-icon> -->
                     </label>
                     <div class="left">
-                        <img  src="img/logobranco.png" alt="">
+                        <img class="logo"  src="img/logobranco.png" alt="">
                     </div>
                     <div class="right">
+                        <!--Allerar icon-->
                         <a href="login.html" class="sair_btn">Login</a>
                     </div>
                 </div>
@@ -29,17 +76,92 @@
                 <a href="FilaAtentimento.html"><ion-icon name="arrow-forward-outline"></ion-icon><span>Fila de Atendimento</span></a>
                 <a href="triagem.html"><ion-icon name="heart"></ion-icon><span>Triagem</span></a>
                 <a href="prontuario.html"><ion-icon name="medkit"></ion-icon><span>Prontuário Medico</span></a>
-                <a href="#"><ion-icon name="map"></ion-icon><span>maps</span></a>
+                <a href="maps.html"><ion-icon name="map"></ion-icon><span>Maps</span></a>
                 <a href="exames.html"><ion-icon name="map"></ion-icon><span>Exames</span></a>
             </nav>
             <main>
-                
+                <!-- 
+                1)alterar fonte da pagina 
+                2)icon
+                3)alinhar da um display na label para ela ficar encima do input
+                4) so colocar no github    
+                -->
+                <div class="text_font">
+                    <form>   
+
+                        <div class="form_center text_font">
+                            <h3 id=título1>PRONTUÁRIO MÉDICO</h3>
+                            <br>
+                        </div>
+                            <div class="form_center">
+                                <label  for="nome">NOME</label>
+                                <input type="text" name="nome" id="nome" size="45">
+                                <label for="idade">IDADE</label>
+                                <input type="text" name="idade" id="idade">
+                                <label for="sexo">SEXO</label>
+                                <input type="text" name="sexo" id="sexo" size="20"> 
+                           </div> 
+                            
+                        <div class="form_center"> 
+                            <label for="profissão">PROFISSÃO</label>
+                            <input type="text" name="profissão" id="profissão"  size="40">
+                           
+                            <label for="queixa principal">QUEIXA PRINCIPAL</label>
+                            <input row="8" id="evolução" name="evolução"></input>
+                        </div>
+                        
+                        <div style="text-align:center">
+                            <h1 id="título2">SINAIS VITAIS</h1>
+                        </div>
+                       
+                        <div style="text-align:center">
+                            <label for="PA">PA</label>
+                            <input typy="text" name="PA" id="PA" size="5">
+                            <label for="FC">FC</label>
+                            <input type="text" name="FC" id="FC" size="5"> 
+                            <label for="FR">FR</label>
+                            <input type="text" name="FR" id="FR" size="5">
+                        </div>
+                       
+                        <div class="form_center">
+                            <label for="história da molestia atual">HISTÓRIA DA MOLÉSTIA ATUAL</label>
+                            <textarea class="form_text_box" row="8" id="evolução" name="evolução"></textarea>
+                            <label>SINAIS E SINTOMAS</label>
+                            <textarea row="8" class="form_text_box" id="evolução" name="evolução"></textarea>
+                           
+                        </div>
+                  
+                        <div class="form_center">
+                            <label for="história da moléstia pregressa">HISTÓRIA DA MOLÉSTIA PREGRESSA</label>
+                            <textarea row="8" class="form_text_box" id="evolução" name="evolução"></textarea>
+                            <label for="testes específicos">TESTES ESPECÍFICOS</label>
+                            <textarea type="text" name="teste específicos" id="testes específicos" size="21"></textarea>
+                        </div>
+                    
+                      
+                        
+                        <div class="form_center">
+                            <label for="medicações">MEDICAÇÕES</label>
+                            <input type="text" name="medicações" id="medicações" size="30">
+                            <label for="alergias">ALERGIAS</label>
+                            <input type="text" name="alergias" id="alergias">
+                            
+                        </div>
+                        
+                        <div class="form_center">
+                            <label for="cirurgias">CIRURGIAS</label>
+                            <input type="text" name="cirurgias" id="cirurgias">
+                            <label for="evolução">EVOLUÇÃO</label>
+                            <input row="8" class="form_text_box" id="evolução" name="evolução">
+                        </div>
+                        
+                        <div class="form_center" >
+                            <button class="button_form" style="left: 78%; position: relative;">SALVAR</button>
+                        </div>
+                    </form>
+                </div>
             </main>
             <!-- <footer></footer> -->
         </div>
-
-    <script>
-        alert("Pagina em construção")
-    </script>
 </body>
 </html>

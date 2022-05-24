@@ -21,7 +21,7 @@ header{
     transition-property: background;
    
 }
-img{
+.logo{
     height: 43px;
     height: 50px;
 }
@@ -90,6 +90,24 @@ footer{
                         " nav main"
                         "nav main";
 }
+/* Variação login */
+.login{
+    display: grid;
+    grid-template-columns:  1fr 1fr; 
+    grid-template-rows: 100vh;
+                    
+}
+
+.botao{
+    text-align: end;
+}
+.botao button{
+    background: #72de92;
+}
+.btn btn-primary{
+    background: #72de92;
+}
+
 
 /* 29808e = azul
 72de92 = verde

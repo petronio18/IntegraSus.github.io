@@ -7,6 +7,329 @@
     <title>Triagem</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <style>
+        form {
+    width:100%
+}
+
+.text_font {
+    font-family: 'Syne';
+}
+
+.text_triagem {
+     /* float: left; */
+     /* margin-left: 310px; */
+     padding: 15px;
+     width: 100%;
+     font-size: 22px;
+}
+
+.text_nome {
+     float: left;
+     margin-left: 310px;
+     padding: 15px;
+     width: 15%;
+     font-size: 15px;
+}
+
+.text_idade {
+     float: left;
+     margin-left: 175px;
+     padding: 15px;
+     width: 5%;
+     font-size: 15px;
+}
+
+.text_sexo {
+     float: left;
+     margin-left: 130px;
+     padding: 15px;
+     width: 10%;
+     font-size: 15px;
+}
+
+.text_profissao {
+     float: left;
+     margin-left: 310px;
+     padding: 15px;
+     padding-top: 1px;
+     width: 20%;
+     font-size: 15px;
+}
+
+.text_queixa {
+     float: left;
+     margin-left: 100px;
+     padding: 15px;
+     padding-top: 1px;
+     width: 20%;
+     font-size: 15px;
+}
+
+.text_sinais {
+     float: left;
+     margin-left: 685px;
+     padding: 15px;
+     width: 100%;
+     font-size: 15px;
+}
+
+.text_pa {
+     float: left;
+     margin-left: 310px;
+     padding: 15px;
+     padding-top: 1px;
+     width: 15%;
+     font-size: 15px;
+}
+
+.text_fc {
+     float: left;
+     margin-left: 45px;
+     padding: 15px;
+     padding-top: 1px;
+     width: 15%;
+     font-size: 15px;
+}
+
+.text_fr {
+     float: left;
+     margin-left: 45px;
+     padding: 15px;
+     padding-top: 1px;
+     width: 15%;
+     font-size: 15px;
+}
+
+.text_sint_resp {
+     float: left;
+     margin-left: 310px;
+     padding: 15px;
+     padding-top: 1px;
+     width: 20%;
+     font-size: 15px;
+}
+
+.text_spo2 {
+     float: left;
+     margin-left: 275px;
+     padding: 15px;
+     padding-top: 1px;
+     width: 5%;
+     font-size: 15px;
+}
+
+.text_temp {
+     float: left;
+     margin-left: 310px;
+     padding: 15px;
+     padding-top: 1px;
+     width: 15%;
+     font-size: 15px;
+}
+
+.text_marcha {
+     float: left;
+     margin-left: 1px;
+     padding: 15px;
+     padding-top: 1px;
+     width: 1px;
+     font-size: 15px;
+}
+
+.text_marcha_op1 {
+     float: left;
+     margin-left: 1px;
+     padding-top: 20px;
+     width: 1px;
+     font-size: 12px;
+}
+
+.text_marcha_op2 {
+     float: left;
+     margin-left: 150px;
+     padding-top: 16px;
+     width: 0px;
+     font-size: 12px;
+}
+
+.text_marcha_op2_label {
+     float: left;
+     margin-left: 20px;
+     padding-top: 20px;
+     width: 0px;
+     font-size: 12px;
+}
+
+.text_marcha_op3 {
+     float: left;
+     margin-left: 137px;
+     padding-top: 16px;
+     width: 0px;
+     font-size: 12px;
+}
+
+.text_marcha_op3_label {
+     float: left;
+     margin-left: 20px;
+     padding-top: 20px;
+     width: 0px;
+     font-size: 12px;
+}
+
+.text_marcha_op4 {
+     float: left;
+     margin-left: 147px;
+     padding-top: 16px;
+     width: 0px;
+     font-size: 12px;
+}
+
+.text_marcha_op4_label {
+     float: left;
+     margin-left: 20px;
+     padding-top: 20px;
+     width: 0px;
+     font-size: 12px;
+}
+
+.text_sistemicas {
+     float: left;
+     margin-left: 310px;
+     padding: 15px;
+     width: 100%;
+     font-size: 15px;
+}
+
+.text_sistemicas_op1 {
+     float: left;
+     margin-left: 320px;
+     padding-top: 1px;
+     width: 0px;
+     font-size: 12px;
+}
+
+.text_sistemicas_op1_label {
+     float: left;
+     margin-left: 20px;
+     padding-top: 4px;
+     width: 0px;
+     font-size: 12px;
+}
+
+.text_sistemicas_op2 {
+     float: left;
+     margin-left: 40px;
+     padding-top: 1px;
+     width: 0px;
+     font-size: 12px;
+}
+
+.text_sistemicas_op2_label {
+     float: left;
+     margin-left: 20px;
+     padding-top: 4px;
+     width: 0px;
+     font-size: 12px;
+}
+
+.text_status_paciente {
+     float: left;
+     margin-left: 310px;
+     padding: 15px;
+     width: 100%;
+     font-size: 15px;
+}
+
+.text_status_paciente_op1 {
+     float: left;
+     margin-left: 320px;
+     padding-top: 1px;
+     width: 0px;
+     font-size: 12px;
+}
+
+.text_status_paciente_op1_label {
+     float: left;
+     margin-left: 20px;
+     padding-top: 4px;
+     width: 0px;
+     font-size: 12px;
+}
+
+.text_status_paciente_op2 {
+     float: left;
+     margin-left: 170px;
+     padding-top: 1px;
+     width: 0px;
+     font-size: 12px;
+}
+
+.text_status_paciente_op2_label {
+     float: left;
+     margin-left: 20px;
+     padding-top: 5px;
+     width: 0px;
+     font-size: 12px;
+}
+
+.text_status_paciente_op3 {
+     float: left;
+     margin-left: 190px;
+     padding-top: 1px;
+     width: 0px;
+     font-size: 12px;
+}
+
+.text_status_paciente_op3_label {
+     float: left;
+     margin-left: 20px;
+     padding-top: 5px;
+     width: 0px;
+     font-size: 12px;
+}
+
+.text_status_paciente_op4 {
+     float: left;
+     margin-left: 150px;
+     padding-top: 1px;
+     width: 0px;
+     font-size: 12px;
+}
+
+.text_status_paciente_op4_label {
+     float: left;
+     margin-left: 20px;
+     padding-top: 5px;
+     width: 0px;
+     font-size: 12px;
+}
+
+.text_status_paciente_op5 {
+     float: left;
+     margin-left: 190px;
+     padding-top: 1px;
+     width: 0px;
+     font-size: 12px;
+}
+
+.text_status_paciente_op5_label {
+     float: left;
+     margin-left: 20px;
+     padding-top: 5px;
+     width: 5px;
+     font-size: 12px;
+}
+
+.button {
+     float: left;
+     margin-left: 1150px;
+     padding-top: 50px;
+     width: 100%;
+     font-size: 20px;
+
+}
+    </style>
 </head>
 <body>
     <div class="container">
@@ -16,7 +339,7 @@
                     <!-- <ion-icon name="menu-outline" id="sidebar_btn"></ion-icon> -->
                 </label>
                 <div class="left">
-                    <img  src="img/logobranco.png" alt="">
+                    <img class="logo" src="img/logobranco.png" alt="">
                 </div>
                 <div class="right">
                     <a href="login.html" class="sair_btn">Login</a>
@@ -28,16 +351,143 @@
             <a href="FilaAtentimento.html"><ion-icon name="arrow-forward-outline"></ion-icon><span>Fila de Atendimento</span></a>
             <a href="triagem.html"><ion-icon name="heart"></ion-icon><span>Triagem</span></a>
             <a href="prontuario.html"><ion-icon name="medkit"></ion-icon><span>Prontuário Medico</span></a>
-            <a href="#"><ion-icon name="map"></ion-icon><span>maps</span></a>
+            <a href="maps.html"><ion-icon name="map"></ion-icon><span>maps</span></a>
             <a href="exames.html"><ion-icon name="map"></ion-icon><span>Exames</span></a>
         </nav>
         <main>
-           
+            <form class="text_font">
+                <div class="text_triagem">
+                    <h1>TRIAGEM</h1>
+                </div>
+                <div class="text_nome" >
+                    <label>NOME</label>
+                    <input type="text" size="56">
+                </div>
+                <div class="text_idade">
+                    <label>IDADE</label>
+                    <input type="text" size="26"/>
+                </div>
+                <div class="text_sexo">
+                    <label>SEXO</label>
+                    <input type="text" size="26"/>
+                </div>
+                <div class="text_profissao">
+                    <label>PROFISSÃO</label>
+                    <input type="text" size="56">
+                </div>
+                <div class="text_queixa">
+                    <label>QUEIXA PRINCIPAL</label>
+                    <input type="text" size="61">
+                </div>
+                <div class="text_sinais">
+                    <h1>SINAIS VITAIS</h1>
+                </div>
+                <div class="text_pa">
+                    <label>PA</label>
+                    <input type="text" size="35">
+                </div>
+                <div class="text_fc">
+                    <label>FC</label>
+                    <input type="text" size="35">
+                </div>
+                <div class="text_fr">
+                    <label>FR</label>
+                    <input type="text" size="35">
+                </div>
+                <div class="text_sint_resp">
+                    <label>SINTOMA RESPIRATÓRIO</label>
+                    <input type="text" size="81">
+                </div>
+                <div class="text_spo2">
+                    <label>SpO2</label>
+                    <input type="text" size="35">
+                </div>
+                <div class="text_temp">
+                    <label>TEMPERATURA</label>
+                    <input type="text" size="25">
+                </div>
+                <div class="text_marcha">
+                    <p>MARCHA:</p>
+                    <input type="radio">
+                </div>
+                <div class="text_marcha_op1">
+                    <p>DEAMBULANDO</p>
+                </div>
+                <div class="text_marcha_op2">
+                    <input type="radio">
+                </div>
+                <div class="text_marcha_op2_label">
+                    <p>COM&nbsp;APOIO</p>
+                </div>
+                <div class="text_marcha_op3">
+                    <input type="radio">
+                </div>
+                <div class="text_marcha_op3_label">
+                    <p>CLAUDICANDO</p>
+                </div>
+                <div class="text_marcha_op4">
+                    <input type="radio">
+                </div>
+                <div class="text_marcha_op4_label">
+                    <p>CADEIRA&nbsp;DE&nbsp;RODAS</p>
+                </div>
+                <div class="text_sistemicas">
+                    <h1>DOENÇAS&nbsp;SISTÊMICAS</h1>
+                </div>
+                <div class="text_sistemicas_op1">
+                    <input type="radio">
+                </div>
+                <div class="text_sistemicas_op1_label">
+                    <p>NÃO</p>
+                </div>
+                <div class="text_sistemicas_op2">
+                    <input type="radio">
+                </div>
+                <div class="text_sistemicas_op2_label">
+                    <p>SIM</p>
+                </div>
+                <div class="text_status_paciente">
+                    <h1>STATUS&nbsp;DO&nbsp;PACIENTE</h1>
+                </div>
+                <div class="text_status_paciente_op1">
+                    <input type="radio">
+                </div>
+                <div class="text_status_paciente_op1_label">
+                    <p>EMERGÊNCIA</p>
+                </div>
+                <div class="text_status_paciente_op2">
+                    <input type="radio">
+                </div>
+                <div class="text_status_paciente_op2_label">
+                    <p>MUITO&nbsp;URGENTE</p>
+                </div>
+                <div class="text_status_paciente_op3">
+                    <input type="radio">
+                </div>
+                <div class="text_status_paciente_op3_label">
+                    <p>URGENTE</p>
+                </div>
+                <div class="text_status_paciente_op4">
+                    <input type="radio">
+                </div>
+                <div class="text_status_paciente_op4_label">
+                    <p>POUCO&nbsp;URGENTE</p>
+                </div>
+                <div class="text_status_paciente_op5">
+                    <input type="radio">
+                </div>
+                <div class="text_status_paciente_op5_label">
+                    <p>NÃO&nbsp;URGENTE</p>
+                </div>
+                <div class="button">
+                    <button type="submit">Salvar</button>
+                </div>
+        </form>
+    
+        </div>
         </main>
         <!-- <footer></footer> -->
     </div>
-    <script>
-        alert("Pagina em construção");
-    </script>
+  
 </body>
 </html>

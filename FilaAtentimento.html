@@ -7,6 +7,154 @@
     <title>Atendimento</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <style>
+
+    
+        @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+        .course {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	display: flex;
+	max-width: 100%;
+	margin: 20px;
+	overflow: hidden;
+	width: 700px;
+}
+
+.course h6 {
+	opacity: 0.6;
+	margin: 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.course h2 {
+	letter-spacing: 1px;
+	margin: 10px 0;
+}
+
+.course-preview {
+	background-color:#b41b1b;
+	color: #fff;
+	padding: 30px;
+	max-width: 250px;
+	max-height: 250px;
+}
+
+.course-preview2 {
+    background-color: #ff7f00;
+	color: #fff;
+	padding: 30px;
+	max-width: 207px;
+	max-height: 250px;
+}
+
+.course-preview3 {
+    background-color: #0a5c07;
+	color: #fff;
+	padding: 30px;
+	max-width: 320px;
+	max-height: 250px;
+}
+
+.course-preview a {
+	color: #fff;
+	display: inline-block;
+	font-size: 15px;
+	opacity: 0.6;
+	margin-top: 30px;
+	text-decoration: none;
+}
+
+.course-preview2 a {
+	color: #fff;
+	display: inline-block;
+	font-size: 15px;
+	opacity: 0.6;
+	margin-top: 30px;
+	text-decoration: none;
+}
+
+.course-preview3 a {
+	color: #fff;
+	display: inline-block;
+	font-size: 15px;
+	opacity: 0.6;
+	margin-top: 30px;
+	text-decoration: none;
+}
+
+.course-info {
+	padding: 30px;
+	position: relative;
+	width: 100%;
+}
+
+.course-info2 {
+	padding: 30px;
+	position: relative;
+	width: 100%;
+}
+
+.course-info3 {
+	padding: 30px;
+	position: relative;
+	width: 100%;
+}
+
+
+.progress-container {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	text-align: right;
+	width: 150px;
+}
+
+.progress {
+	background-color: #ddd;
+	border-radius: 3px;
+	height: 5px;
+	width: 100%;
+}
+
+
+
+.progress::after {
+	border-radius: 3px;
+	background-color: #2d7a8a;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 5px;
+	width: 66%;
+}
+
+
+.progress-text {
+	font-size: 10px;
+	opacity: 0.6;
+	letter-spacing: 1px;
+}
+
+.btn {
+	background-color: #2d7a8a;
+	border: 0;
+	border-radius: 50px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-size: 16px;
+	padding: 12px 25px;
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	letter-spacing: 1px;
+}
+
+    </style>
 </head>
 <body>
     <div class="container">
@@ -16,7 +164,7 @@
                     <!-- <ion-icon name="menu-outline" id="sidebar_btn"></ion-icon> -->
                 </label>
                 <div class="left">
-                    <img  src="img/logobranco.png" alt="">
+                    <img  class="logo" src="img/logobranco.png" alt="">
                 </div>
                 <div class="right">
                     <a href="login.html" class="sair_btn">Login</a>
@@ -28,16 +176,77 @@
             <a href="FilaAtentimento.html"><ion-icon name="arrow-forward-outline"></ion-icon><span>Fila de Atendimento</span></a>
             <a href="triagem.html"><ion-icon name="heart"></ion-icon><span>Triagem</span></a>
             <a href="prontuario.html"><ion-icon name="medkit"></ion-icon><span>Prontuário Medico</span></a>
-            <a href="#"><ion-icon name="map"></ion-icon><span>maps</span></a>
+            <a href="maps.html"><ion-icon name="map"></ion-icon><span>maps</span></a>
             <a href="exames.html"><ion-icon name="map"></ion-icon><span>Exames</span></a>
         </nav>
         <main>
-           
+            <div class="courses-container">
+                <div class="course">
+                    <div class="course-preview">
+                        <h6>PACIENTE</h6>
+                        <h2>Alonso Belmonte</h2>
+                        <a href="#">TRIAGEM<i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    <div class="course-info">
+                        <div class="progress-container">
+                            <div class="progress"></div>
+                            <span class="progress-text">
+                                1/3 Atendimento
+                            </span>
+                        </div>
+                        <h6>26/04/2022 - 13:00hs</h6>
+                        <h2>EMERGÊNCIA</h2>
+                        <button class="btn">Continue</button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="courses-container">
+                <div class="course">
+                    <div class="course-preview2">
+                        <h6>PACIENTE</h6>
+                        <h2>Júlia Walker da Silva</h2>
+                        <a href="#">TRIAGEM<i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    <div class="course-info2">
+                        <div class="progress-container">
+                            <div class="progress"></div>
+                            <span class="progress-text">
+                                2/3 Atendimento
+                            </span>
+                        </div>
+                        <h6>26/04/2022 - 14:00hs</h6>
+                        <h2>MUITO</h2>
+                        <h2>URGÊNTE</h2>
+                        <button class="btn">Continue</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="courses-container">
+                <div class="course">
+                    <div class="course-preview3">
+                        <h6>PACIENTE</h6>
+                        <h2>Camila Fiães</h2>
+                        <a href="#">TRIAGEM<i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    <div class="course-info3">
+                        <div class="progress-container">
+                            <div class="progress"></div>
+                            <span class="progress-text">
+                                3/3 Atendimento
+                            </span>
+                        </div>
+                        <h6>26/04/2022 - 15:00hs</h6>
+                        <h2>POUCO</h2>
+                        <h2>URGÊNTE</h2>
+                        <button class="btn">Continue</button>
+                    </div>
+                </div>
+            </div>
         </main>
         <!-- <footer></footer> -->
     </div>
-    <script>
-        alert("Pagina em construção");
-    </script>
+  
 </body>
 </html>
